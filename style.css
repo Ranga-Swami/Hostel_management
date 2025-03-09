@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+.login-container {
+    background: white;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.navbar {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.navbar a:hover {
+    background: #34495e;
+}
+
+.content-area {
+    padding: 20px;
+}
+
+/* Add more styles as needed */
+/* Room Cards */
+.room-card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.room-card button {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Request/Complaint Cards */
+.request-card, .complaint-card {
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 4px solid #3498db;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.request-card h4, .complaint-card h4 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+}
+
+/* Form Styles */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background: #2980b9;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Add these to existing styles */
+.booking-steps {
+    display: grid;
+    gap: 20px;
+}
+
+.step {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.complaint-card, .booking-card {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+}
+
+.success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.admin-dashboard {
+    display: grid;
+    gap: 30px;
+}
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.option-btn {
+    padding: 15px;
+    background: #e9ecef;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.success {
+    background: #d4edda;
+    color: #155724;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+/* Add these styles */
+.profile-container {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.profile-icon {
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: rgb(248, 247, 247);
+    box-shadow: 0 2px 10px rgba(251, 251, 251, 0.885);
+    border-radius: 4px;
+    min-width: 150px;
+    z-index: 100;
+}
+
+.profile-menu a {
+    color: #333 !important;
+    padding: 10px 15px;
+}
+
+.profile-menu a:hover {
+    background: #f8f9fa;
+}
+
+.confirmation-summary {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.confirm-button {
+    background: #28a745 !important;
+    margin-top: 15px;
+}
+/* Add these styles */
+.options-container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.option-btn {
+    padding: 15px;
+    background: #fff;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+    background: #007bff;
+    color: white;
+}
+
+.confirmation-summary {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+}
+
+.confirm-button {
+    background: #28a745;
+    color: white;
+    padding: 12px 24px;
+    margin-top: 20px;
+}
+/* Add these to your existing style.css */
+.login-container input,
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    background-color: #2980b9;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #2c3e50;
+}
+
+.login-container a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}

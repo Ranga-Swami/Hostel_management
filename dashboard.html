@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hostel Connect Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <nav class="navbar">
+            <h2>Hostel Connect</h2>
+            <div class="nav-links">
+                <a href="room.html">Room Allocation</a>
+                <a href="maintenance.html">Maintenance Requests</a>
+                <a href="complaints.html">Complaints</a>
+            </div>
+            <div class="profile-container">
+                <i class="fas fa-user-circle profile-icon" onclick="toggleProfileMenu()"></i>
+                <div id="profileMenu" class="profile-menu">
+                    <a href="#" onclick="showMyProfile()">My Profile</a>
+                    <a href="#" onclick="logout()">Logout</a>
+                </div>
+            </div>
+        </nav>
+        <div class="content-area">
+            <h1>Welcome to Hostel Connect</h1>
+            <p>Select an option from the sidebar to get started</p>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

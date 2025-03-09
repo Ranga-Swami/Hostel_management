@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Room Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Room Booking</h2>
+        <div id="bookingSteps"></div>
+        <div id="bookingSummary"></div>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Authentication check
+        if(!localStorage.getItem('currentUser')) {
+            window.location.href = 'index.html';
+        }
+        // Initialize booking process
+        window.onload = initializeRoomBooking;
+    </script>
+</body>
+</html>

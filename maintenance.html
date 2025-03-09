@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maintenance Requests</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Maintenance Requests</h2>
+        <div class="maintenance-options">
+            <button onclick="submitMaintenance('sweeping')">Sweeping</button>
+            <button onclick="submitMaintenance('cleaning')">Cleaning</button>
+            <button onclick="submitMaintenance('washroom')">Washroom Cleaning</button>
+        </div>
+        <div id="maintenanceStatus"></div>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
